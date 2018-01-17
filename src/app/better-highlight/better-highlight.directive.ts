@@ -1,4 +1,4 @@
-import { 
+import {
 
 Directive,
  Renderer2,
@@ -22,7 +22,7 @@ constructor( private elRef: ElementRef, private renderer: Renderer2) { }
 
 ngOnInit() {
 this.backgroundColor = this.defaultColor;
-this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'blue', false, false);
+//this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'blue', false, false);
 }
 
 @HostListener('mouseenter') mouseover(eventData: Event) {
